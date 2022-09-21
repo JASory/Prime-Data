@@ -1,7 +1,7 @@
 # Prime-Data
 Computed data for primes
 
-Reference material for data on primes.
+Reference material for data on primes. (Note this was written spur of the moment, and apparently I don't have the data with me, will upload later)
 
 - Prime-2048 - List of the first 2048 odd primes along with multiplicative inverses over 2^64 and 2^128 
 
