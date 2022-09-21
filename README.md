@@ -2,10 +2,12 @@
 Computed data for primes
 
 Reference material for data on primes.
-Prime-2048 - List of the first 2048 odd primes along with multiplicative inverses over 2^64 and 2^128 
-SPRP-2-64 - List of base-2 strong pseudoprimes that are greater than 2^64 and  coprime to the first 65 primes. 
-PI-2-64-n - List of primecounts as computed by a single 2-strong fermat test greater than 2^64
-primesearch.rs 
+
+- Prime-2048 - List of the first 2048 odd primes along with multiplicative inverses over 2^64 and 2^128 
+
+- SPRP-2-64 - List of base-2 strong pseudoprimes that are greater than 2^64 and  coprime to the first 65 primes. 
+- PI-2-64-n - List of primecounts as computed by a single 2-strong fermat test greater than 2^64
+- primesearch.rs 
 
 I strongly encourage you to contribute to these lists, especially the PI-2-64-n lists and Pseudoprime lists as these can permit the construction of much faster primality tests. (i.e only two base checks instead of the standard 12, or even the unproven BSPW with a cost of 5 checks). 
 
