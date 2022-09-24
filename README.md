@@ -1,7 +1,7 @@
 # Prime-Data
 Computed data for primes
 
-Reference material for data on primes. (Note this was written spur of the moment, and apparently I don't have the data with me, will upload later)
+Reference material for optimizing and checking computational number theory software
 
 - Prime-2048 - List of the first 2048 odd primes along with multiplicative inverses over 2^64 and 2^128 
 
@@ -18,4 +18,3 @@ A simple Rust-lang implementation that performs this computation automatically i
 The reason for the parameter selection is to produce consistency with Jan Feitsma's table of 2-prps which J.A Sory reduced to a much more efficient list of 2-sprps. Trial division by the first 65 primes was chosen as it is roughly the equivalent of a single SPRP test in the fastest case, allowing it to be near optimally applied to all integers in a primality test. This is important because it considerably reduces the number of odd integers that undergo a 2-SPRP test. Unlike Feitsma's table J.A Sory's table is not a true pseudoprime list because it eliminates pseudoprimes that have small factors, these however are quite rare especially over 2^64 and would get eliminated by trial division* in an optimally efficient primality test anyway therefore it still satisfies the goal of permitting a fast primality test while reducing the amount of computation needed to achieve it. 
 
 * note that "trial division"  here actually means multiplication by a prime inverse which is 3-5 times faster, similarly the complexity is compared not to a naive SPRP check but a Montgomery arithmetic test over 2^n. This should make the claim that "trial division by the first 65 primes is roughly equal to the best case SPRP test" make more sense. In a naive implementations the bound is actually a bit higher. 
-
