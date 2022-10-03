@@ -6,7 +6,8 @@
       75 in the block 2^512 states that 2^512 + 75 is the first prime greater than 2^512. 2^512 + 145 is the next prime etc, therefore a good
       check is to enumerate first 256 primes and check that it also matches the tables. 
       
-      Note that these might evaluate faster than average, however representing random primes is difficult to do in a condensed manner
+      Note that these evaluate approximately 1.2-1.5 times faster than average, however representing random primes is difficult to do in a
+      condensed manner
       
       
 
