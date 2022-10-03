@@ -11,13 +11,13 @@
   optimization that almost certainly all tests will benefit from (precluding some unknown architecture, or breakthrough in computing 
   strong fermat tests).  
  
-   Interval 2^64; 2^64 + 2^46 
+   Interval 2^64; 2^64 + 2^46 + 2^45
    
-   Pseudoprime Count : 60
+   Pseudoprime Count : 91
    
-   Filter Base : 45       i.e a check of sprp(x,2) and sprp(x,45) is sufficient to prove primality in this interval 
+   Filter Base : 99       i.e a check of sprp(x,2) and sprp(x,99) is sufficient to prove primality in this interval 
    
-   Primecount : 1586259700610  // number of primes which benefit from this speedup
+   Primecount : 1586259700610  // number of primes which benefit from this speedup  {Pseudoprimes are not currently listed above 2^64 + 2^46}
    
    
    
