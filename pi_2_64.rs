@@ -1,6 +1,6 @@
 /*
 
-  List of Base-2 Strong Pseudoprimes over 2^64 and less than 2^44, additionally there is a table of Pi computed using only a BASE-2 Pseudoprime and 
+  List of Base-2 Strong Pseudoprimes over 2^64 and less than 9216*2^32, additionally there is a table of Pi computed using only a BASE-2 Pseudoprime and 
   trial division of the first 64 odd primes. To find PI you add the sum of the array and subtract the number of pseudoprimes. The PI elements are sums of prime numbers 
   in intervals of 2^32. 
 
