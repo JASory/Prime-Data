@@ -1,13 +1,17 @@
-  
-      List of probable primes, note that none of these have been proven however it is extremely likely that they are prime
+      List of probable primes, note that none of these have been proven however it is extremely likely that they are prime. 
+      All primes less than 2^6400 have at most a 1/2^128 chance of being composite. 2^6400 have a one in 2^8, and n > 2^64000 have a 1 in 2^4. Of
+      course none of these integers actually satisfy the Monier-Rabin bound and consequently the actual error rate is far lower. 
       
-      the primes are sorted by there length in machine words of 64-bit length and are enumerated starting from the top integer. i.e 
-      
+      The primes are sorted by there length in machine words of 64-bit length and are enumerated starting from the top integer. i.e 
       75 in the block 2^512 states that 2^512 + 75 is the first prime greater than 2^512. 2^512 + 145 is the next prime etc, therefore a good
       check is to enumerate first 256 primes and check that it also matches the tables. 
       
-      Note that these evaluate approximately 1.2-1.5 times faster than average, however representing random primes is difficult to do in a
-      condensed manner
+      Note that these evaluate faster than average due to the there proximity to perfect powers which can be exponentiated very rapidly, 
+      however representing random primes is difficult to do in a condensed manner. 
+      
+      To get a more accurate metric multiply the time by  1.2 in the smaller cases to 1.5 in larger cases.  Special exponentiation routines may
+      require different multipliers for approximation. 
+      
       
       
 
