@@ -2,29 +2,29 @@
  Here is a list of base-2 strong pseudoprimes that are coprime to the first 65 primes. 
  The prior list provides the interval, the base that filters all the listed pseudoprimes and the number of primes in the interval
  
- Note that prior to this data it was previously necessary to use at least 12 bases to verify primality for an integer in this interval.
- this permits a much faster test instead to be performed (with a 3.5x speedup in the average case, and 6x for primes)
+ Note that prior to this data it was previously necessary to use at least 12 bases (Sorenson & Webster) to verify primality for an integer in this
+ interval.This permits a much faster test instead to be performed (with a 3.5x speedup in the average case, and 6x for primes)
  
  Unfortunately due to the optimization requirement that the listed 2-SPRP's be coprime to the first 65 primes, this is not sufficient for a 
  number-theorectical claim that a particular test filters all pseudoprimes (although it is extremely unlikely that a pseudoprime has actually
  been skipped so far, there is no proof that it is not). It is however still of interest in applied tests as the coprimality check is a trivial
-  optimization that almost certainly all tests will benefit from (precluding some unknown architecture, or breakthrough in computing
+  optimization that almost certainly all tests will benefit from (precluding some unknown architecture, or breakthrough in computing 
   strong fermat tests). 
  
-   Interval :  2^64; 2^64 + 2^46 + 2^45 + 2^42 + 2^41
+   Interval :  2^64; 2^64 + 2^47 + 2^42
    
-   Integer Count : 112150186033152
+   Integer Count : 145135534866432
    
-   Pseudoprime Count : 97
+   Pseudoprime Count : 123
    
-   Filter Base : 99       i.e a check of sprp(x,2) and sprp(x,99) is sufficient to prove primality in this interval 
+   Filter Base : 135       i.e a check of sprp(x,2) and sprp(x,135) is sufficient to prove primality in this interval 
    
-   Primecount : 2528101740696   number of primes which benefit from this speedup currently greater than 2.5 trillion
+   Primecount : 3271660789557   number of primes which benefit from this speedup currently greater than 3.2 trillion
    
    
    
                                         BASE-2 STRONG PSEUDOPRIMES
-__________________________________________________________________________________________________________________________________________  
+___________________________________________________________________________________________________________________________________________        
         
         18446744073709551617, 18446745108099184741, 18446745906252536933, 18446749090500129829, 
 	18446749994322444217, 18446751380592290563, 18446751531224114473, 18446751568299810391, 
@@ -50,6 +50,11 @@ ________________________________________________________________________________
  	18446841150835577707, 18446841621195254983, 18446842986523541441, 18446847087461586571, 
  	18446848060540346197, 18446848288677790549, 18446849199242370229, 18446850471586825901, 
  	18446850757365966241, 18446851942584450001, 18446852150282536091, 18446852736736599517, 
- 	18446853088244266769,       
- 	
-___________________________________________________________________________________________________________________________________________   
+ 	18446853088244266769, 18446856356697122729, 18446858398282659329, 18446860842970053121,
+	18446861743593429121, 18446865514739363521, 18446865752481185251, 18446867481645838141,
+	18446867701386985981, 18446867883671436301, 18446869135886064001, 18446869684473554017,
+	18446873908783872641, 18446874261330630961, 18446875387428554897, 18446877290740592233,
+	18446877368079020719, 18446877465676424969, 18446878384258881481, 18446879964312089473,
+	18446880306199482337, 18446880944381149753, 18446881134358408033, 18446882544047591651,     
+ 	18446882720926345093, 18446884238442268153, 18446888569975888513, 
+___________________________________________________________________________________________________________________________________________
