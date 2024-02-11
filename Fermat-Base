@@ -1,0 +1,10 @@
+
+Provides a list of Strong Fermat bases and the first known composite to pass
+If the Bound is provided with an H then it means that it was heuristically found
+i.e it has no proof that it is the smallest. 
+
+                        Deterministic 
+
+         Base List                             Bound                     Source
+_________________________________________________________________________________________
+2,37,325,1507,1931,9375,11756317481           > 2^64                     f-analysis (Manual)
